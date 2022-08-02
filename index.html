@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/sbg" href="./calculator.svg">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="display">
+            <input id="displayInput" placeholder="0" disabled>
+        </div>
+        
+        <form class="forms">
+            <div class="row-one row">
+                <input type="button" value="AC" id="all-clear" class="allClear">
+                <input type="button" value="/" class="division operator">
+                <input type="button" value="x" class="multiplication operator">
+                <input type="button" value="+" class="plus operator">
+
+            </div>
+
+            <div class="row-two row">
+                <input type="button" value="DEL" class="unitDell">
+                <input type="button" value="%" class="percente operator">
+                <input type="button" value="x²" class="squared operator">
+                <input type="button" value="-" class="subtraction operator">
+            </div>
+
+            <div class="row-three row">
+                <input type="button" value="1" class="number">
+                <input type="button" value="2" class="number">
+                <input type="button" value="3" class="number">
+                <input type="button" value="4" class="number">
+            </div>
+
+            <div class="row-four row">
+                <input type="button" value="5" class="number">
+                <input type="button" value="6" class="number">
+                <input type="button" value="7" class="number">
+                <input type="button" value="8" class="number">
+            </div>
+
+            <div class="row-five row">
+                <input type="button" value="9" class="number">
+                <input type="button" value="0" class="number">
+                <input type="button" value="." class="dot number">
+                <input type="button" id="result" class="result" value="=">
+                <!-- <button id="result" onclick="myResult()">=</button> -->
+                
+            </div>
+        </form>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

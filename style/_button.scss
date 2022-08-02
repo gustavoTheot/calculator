@@ -1,0 +1,25 @@
+form{
+
+    margin-top: 50px;
+
+    input[type='button'], button{
+        width: 88px;
+        height: 62px;
+    
+        margin: 13px 10px 13px 10px;
+    
+        border: none;
+        border-radius: 8px;
+    
+        color: white;
+        background-color: #5F605F;
+    }
+    
+    #all-clear{
+        background-color: #DF3B30;
+    }
+
+    #result{
+        background-color: #F8851B;
+    }
+}

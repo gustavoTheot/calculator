@@ -1,0 +1,31 @@
+
+@media (max-width: 1120px){
+    .container{
+        width: 800px;
+    }
+}
+
+@media (max-width: 750px){
+    .container{
+        width: 600px;
+    }
+}
+
+@media (max-width: 580px){
+    .container{
+        width: 400px;
+    }
+
+    #displayInput{
+        width: 348px;
+    }
+
+    form{
+        input[type='button'], button{
+            width: 68px;
+            height: 62px;
+        
+            margin: 10px 8px 10px 8px;
+        }
+    }
+}

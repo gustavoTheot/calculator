@@ -15,8 +15,6 @@ const allClear = document.querySelector('.allClear')
 let operator = ''
 let stoped = false
 
-let number = []
-
 
 /**
  * criar o botão de apagar tudo
@@ -46,6 +44,7 @@ buttonNumber.forEach((num) => {
             display.value = ''
             stoped = false
             operator = ''
+            calcValue = 0
 
             display.value += num.value
             console.log('stoped else number', stoped)
@@ -75,7 +74,7 @@ buttonOperator.forEach((op) => {
             console.log('stoped if vazio op', stoped)
         }else{
             myResult()
-            display.value = number + op.value
+            display.value += op.value
             operator = op.value
             stoped = false
             console.log('stoped else op',stoped)
@@ -100,7 +99,7 @@ buttonOperator.forEach((op) => {
 */
 
 function myResult(){
-
+    
     if(!stoped){
 
         number = display.value.split(operator)
@@ -131,7 +130,8 @@ function myResult(){
                 break
         }
 
-        console.log(number)
+        stoped = true
+        //calcValue = Number(display.value)
     }
 }
 

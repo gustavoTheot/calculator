@@ -15,7 +15,7 @@ const allClear = document.querySelector('.allClear')
 let operator = ''
 let stoped = false
 
-let calcValues = 0
+let number = []
 
 
 /**
@@ -53,9 +53,6 @@ buttonNumber.forEach((num) => {
     })
 })
 
-
-
-
 /*
  * 
  * percorrer todos os botões de operador e pegar seus valores
@@ -78,7 +75,7 @@ buttonOperator.forEach((op) => {
             console.log('stoped if vazio op', stoped)
         }else{
             myResult()
-            display.value += op.value
+            display.value = number + op.value
             operator = op.value
             stoped = false
             console.log('stoped else op',stoped)
@@ -103,6 +100,7 @@ buttonOperator.forEach((op) => {
 */
 
 function myResult(){
+
     if(!stoped){
 
         number = display.value.split(operator)
